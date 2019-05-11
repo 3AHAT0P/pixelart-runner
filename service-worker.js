@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.1bab8c81be3b92bdd9aed22ed424c4eb.js"
+  "/pixelart-runner/precache-manifest.73347fdb0a6134317dc0abcf47defc92.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "first-one"});
