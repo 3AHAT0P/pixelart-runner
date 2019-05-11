@@ -1,18 +1,34 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <MainScene/>
+    <div class="home__info">
+      <span>Controlls:</span><br/>
+      <span>  Left Arrow - Move Left</span><br/>
+      <span>  Right Arrow - Move Right</span><br/>
+      <span>  Spacebar - Jump</span><br/>
+    </div>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue';
+
+import MainScene from '@/components/main-scene.vue';
 
 export default {
   name: 'home',
   components: {
-    HelloWorld,
+    MainScene,
   },
 };
 </script>
+
+<style scoped lang="stylus">
+.home
+  display grid
+  grid-template-rows auto 200px
+  width 100%
+  height 100vh
+  &__info
+    padding 32px 64px
+    text-align left
+</style>
